@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+h1 {
+    margin: 40px auto 10px auto;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+h5{
+    color: #1841b3;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.contenedor .pelicula {
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.contenedor .pelicula:hover{
+    box-shadow: 2px 20px 65px rgb(41, 255, 191);
+}
+
+.contenedor .poster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contenedor .pelicula:hover .titulo{
+    color: rgb(28, 177, 132);
+    font-weight: 700;
+}
+
+.contenedor .titulo {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contenedor .calificacion {
+    font-size: 1.1em;
+    color: #ff9800;
+    margin-top: 10px;
+}
+
+
+.paginacion {
+    position: fixed;
+    bottom: 0;
+    background: rgb(174,238,236);
+    background: radial-gradient(circle, rgba(174,238,236,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: #241744;
+    color: #fff;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: .3s ease all;
+}
+
+.paginacion button:hover {
+    background: rgb(28, 177, 132);
+    box-shadow: 2px 20px 65px rgb(41, 255, 191);
+}
